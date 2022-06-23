@@ -4,7 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 id="title">COVID-<span>19</span> Survey Form</h1>
+      <p id="description">
+        Aftermath of <span>pandemic</span> and what it brings.
+      </p>
+    </header>
+
+    <main>
+      <form action="" id="survey-form">
+        <article class="inputs">
+          <label for="name" id="name-label">Enter your name: </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your full name (middle name optional)"
+          />
+          <label for="email" id="email-label">Enter your email: </label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Email in standard format."
+          />
+          <label for="number" id="number-label">Enter your age: </label>
+          <input
+            type="number"
+            id="number"
+            min="12"
+            max="80"
+            placeholder="Age between 12 and 80."
+          />
+        </article>
+        <!--
+        <article class="radios">
+          <select name="" id="dropdown"></select>
+          <input type="radio" name="" id="" />
+          <input type="radio" name="" id="" />
+        </article>
+
+        <article class="checkboxes">
+          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" />
+        </article>
+
+        <article class="textsubmit">
+          <textarea name="" id="" cols="30" rows="10"> </textarea>
+          <input type="submit" value="" id="submit" />
+        </article>
+         -->
+      </form>
+    </main>
+  </body>
 </html>

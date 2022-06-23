@@ -11,6 +11,7 @@ body {
     font-family: 'Trirong', serif;
     font-size: 12px;
     margin: 0;
+    color: white;
 }
 body::after {
     content: '';
@@ -30,12 +31,11 @@ body::after {
     background-position: center;
 }
 header {
-    color: white;
     text-align: center;
 }
-header p {
+header p, .radios p, .checkboxes p {
     font-size: 1.7em;
-    margin-bottom: 1.4em;
+    margin-bottom: 1.3em;
 }
 header h1 {
     font-size: 3em;
@@ -47,26 +47,27 @@ header span {
     font-weight: 600;
     font-family: 'Audiowide', cursive;
 }
-label {
+.inputs label {
     font-family: 'Audiowide', cursive;
     display: flex;
     align-items: center;
     font-size: 1.3em;
-    color: white;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
 }
 main {
     width: 100%;
     background-color: rgba(47, 45, 128, 0.8);
+    margin-left: auto;
+    margin-right: auto;
 }
-input {
+.inputs input, select {
     width: 100%;
     padding: 0.5em;
     border: none;
     margin-bottom: 1em;
     font-size: 1.5em;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 0.7em;
     background-color: black;
     color: white;
@@ -85,4 +86,25 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+@media (min-width: 576px) {
+    main {
+        max-width: 577px;
+    }
+}
+@media (min-width: 768px) {
+    main {
+        max-width: 769px;
+    }
+}
+.radio-peer, .checkbox-peer {
+    margin: 0.5em 0.5em;
+    font-size: 1.7em;
+    display: flex;
+}
+.radio-peer label {
+    margin-left: 0.5em;
+}
+input[type=radio] {
+    transform: scale(1.4);
 }

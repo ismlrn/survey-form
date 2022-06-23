@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1 id="title">COVID-<span>19</span> Survey Form</h1>
-      <p id="description">
+      <p id="description" class="par-text">
         Aftermath of <span>pandemic</span> and what it brings.
       </p>
     </header>
@@ -39,63 +39,76 @@
             placeholder="Age between 12 and 80."
           />
         </article>
-
+        <hr />
         <article class="radios">
-          <p>
+          <p class="par-text">
             Which option best describes your status regarding to dealing with
             COVID?
           </p>
-          <select name="" id="dropdown">
-            <option value="">Select your current sitution</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
+          <select name="get-covid" id="dropdown">
+            <option value="">Select your current situation...</option>
+            <option value="mild">I had COVID but mild.</option>
+            <option value="long">Dealing with Long COVID symptom.</option>
+            <option value="frequent">Frequently get COVID.</option>
+            <option value="never">Never get COVID.</option>
           </select>
-          <p>Which option best describes your current role?</p>
+          <p class="par-text">How long you are expose to COVID?</p>
           <div class="radio-peer">
-            <input type="radio" name="tull" id="" />
-            <label for="stud">Student</label>
+            <input type="radio" name="expose" value="doctor" />
+            <label>Doctor, Nurse or hospital staff.</label>
           </div>
           <div class="radio-peer">
-            <input type="radio" name="tull" id="" />
-            <label for="tull">Full Time Job</label>
+            <input type="radio" name="expose" value="house" />
+            <label>Housekeeper or old people.</label>
           </div>
           <div class="radio-peer">
-            <input type="radio" name="tull" id="" />
-            <label for="tull">Full Time Job</label>
+            <input type="radio" name="expose" value="school" />
+            <label>Student, Teacher or School staff.</label>
           </div>
           <div class="radio-peer">
-            <input type="radio" name="tull" id="" />
-            <label for="tull">Full Time Job</label>
+            <input type="radio" name="expose" value="people" />
+            <label>A job that deal with people a lot.</label>
           </div>
         </article>
-
+        <hr />
         <article class="checkboxes">
-          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <p class="par-text">Which vaccine did you get?</p>
           <div class="checkbox-peer">
-            <input type="checkbox" name="tull" id="" />
-            <label for="tull">Definitely</label>
+            <input type="checkbox" name="vaccine" value="phizer" />
+            <label>Pfizer–BioNTech</label>
           </div>
           <div class="checkbox-peer">
-            <input type="checkbox" name="tull" id="" />
-            <label for="tull">Definitely</label>
+            <input type="checkbox" name="vaccine" value="oxford" />
+            <label>Oxford–AstraZeneca</label>
           </div>
           <div class="checkbox-peer">
-            <input type="checkbox" name="tull" id="" />
-            <label for="tull">Definitely</label>
+            <input type="checkbox" name="vaccine" value="moderna" />
+            <label>Moderna</label>
           </div>
           <div class="checkbox-peer">
-            <input type="checkbox" name="tull" id="" />
-            <label for="tull">Definitely</label>
+            <input type="checkbox" name="vaccine" value="sputnik" />
+            <label>Sputnik V</label>
+          </div>
+          <div class="checkbox-peer">
+            <input type="checkbox" name="vaccine" value="sinopharm" />
+            <label>Sinopharm BIBP</label>
+          </div>
+          <div class="checkbox-peer">
+            <input type="checkbox" name="vaccine" value="notvaccine" />
+            <label>I don't trust vaccine, Bill Gates put micro-chip...</label>
           </div>
         </article>
-        <!--
+        <hr />
         <article class="textsubmit">
-          <textarea name="" id="" cols="30" rows="10"> </textarea>
-          <input type="submit" value="" id="submit" />
+          <p class="par-text">How do you see world after COVID-19?</p>
+          <textarea
+            name="self-opinion"
+            id="textarea"
+            placeholder="Tell us about your experience."
+          >
+          </textarea>
+          <input type="submit" value="Submit" id="submit" />
         </article>
-         -->
       </form>
     </main>
   </body>
